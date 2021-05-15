@@ -1,3 +1,5 @@
+//import custom env variables
+require('dotenv').config({path: __dirname + '/.env'})
 //import express library
 const express = require('express');
 //import environment helper
