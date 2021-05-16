@@ -9,7 +9,7 @@ const path = require('path');
 //setup app
 const app = express();
 //setup port number
-const port = process.port || 3000;
+const port = process.env.PORT || 3000;
 //sets up the Express app to handle incoming data payload
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
