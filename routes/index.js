@@ -9,6 +9,6 @@ let deletenote = require('./deletenote');
 //connect routes to router
 router.get('/notes',getnotes);
 router.post('/notes',savenote);
-router.delete('/notes',deletenote);
+router.delete('/notes/:id',deletenote);
 //export router to server
 module.exports = router;
