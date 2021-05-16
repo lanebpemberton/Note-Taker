@@ -11,7 +11,7 @@ module.exports = async function(req, res)
     //check if note to delete exists
     for(let a = 0;a<dbData.length;a++)
     {
-        if(dbData[a].id === id)
+        if(dbData[a].id == id)
         {
             //remove object from array
             dbData.splice(a, 1);
